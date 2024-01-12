@@ -1,11 +1,7 @@
 import React , {useState} from "react";
 import Board from "../Board/Board";
 import { calculateWinner } from "../../helpers";
-
-const style = {
-    width: '200px',
-    margin: '20px auto'
-}
+import "./Game.css"
 
 const Game = () => {
     const[history, setHistory] = useState([Array(9).fill(null)]);
@@ -48,7 +44,7 @@ const Game = () => {
         <>
             <h2>Tic Tac Toe</h2>
             <Board squares={history[stepNumber]} onClick={handleClick} />
-            <div style={style}>
+            <div class="game">
                 <p>{winner ? 'The Winner is: ' + winner : 'Next Player: ' + (xIsNext ? 'X' : 'O')}</p>
                 {renderMoves()}
             </div>
