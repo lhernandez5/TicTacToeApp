@@ -2,3 +2,16 @@
     width: 200px;
     margin: 20px auto;
 }
+.title {
+    text-align: center;
+    font-family: 'Verdana';
+    color: blueviolet;
+    font-size: 40px; 
+}
+
+.result {
+    color:blue;
+    font-family: 'Lucida Grande';
+    font-size: 20px;
+    font-weight: bold;
+}
