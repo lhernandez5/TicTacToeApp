@@ -33,7 +33,7 @@ const Game = () => {
             const destination = move ? `Go to move #${move}` : 'New Game';
             return (
                 <li key={move} class="moves">
-                    <button class="moves" onClick={() => jumpTo(move)}>{destination}</button>
+                    <button class="movesButton" onClick={() => jumpTo(move)}>{destination}</button>
                 </li> 
             )
         })

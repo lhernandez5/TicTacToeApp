@@ -2,21 +2,31 @@
     width: 200px;
     margin: 20px auto;
 }
+
 .title {
     text-align: center;
     font-family: 'Verdana';
-    color: blueviolet;
-    font-size: 40px; 
+    color: rgb(179, 6, 223);
+    font-size: 40px;
 }
 
 .result {
-    color:blue;
+    color:#4400cc;
     font-family: 'Lucida Grande';
     font-size: 20px;
     font-weight: bold;
 }
 
 .moves {
-    color:blue;
+    color:#4400cc;
     font-size: 20px;
+}
+
+.movesButton {
+    color:blueviolet;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid #4400cc;
+    background-color: #d9b3ff;
 }
