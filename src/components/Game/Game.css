@@ -15,6 +15,15 @@
     font-family: 'Lucida Grande';
     font-size: 20px;
     font-weight: bold;
+    text-align: center;
+}
+
+.winner{
+    color:#4400cc;
+    font-family: 'Lucida Grande';
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
 }
 
 .moves {
@@ -29,4 +38,5 @@
     border-radius: 10px;
     border: 2px solid #4400cc;
     background-color: #d9b3ff;
+    margin: 2px;
 }
