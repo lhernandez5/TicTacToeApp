@@ -18,12 +18,3 @@ export function calculateWinner(squares){
     }
     return null;
 }
-
-//example
-const squares = [
-    null, null, null,
-    'X','X','O',
-    null,null,null
-];
-
-console.log(calculateWinner(squares))
