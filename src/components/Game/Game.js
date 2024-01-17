@@ -47,7 +47,7 @@ const Game = () => {
             <div className="game">
                 <p className="winner">{winner ? `The Winner is: ` + winner + `!!! 🏅` : null}</p>
                 <p className="tie">{(!winner && stepNumber===9) ? `It's a Tie! 👔`: null}</p>
-                <p className="result">{!winner ? `Current Player: ` + (xIsNext ? `X` : `O`) : null}</p>
+                <p className="whosTurn">{(!winner && stepNumber!==9) ? `Current Player: ` + (xIsNext ? `X` : `O`) : null}</p>
                 {((stepNumber===0 && !winner) || (stepNumber===0 && winner)) ? null : (<button className="newGameButton" onClick={() => jumpTo(0)}>{`New Game`}</button>)}
                 {stepNumber===0 ? `` : renderMoves()}
             </div>
