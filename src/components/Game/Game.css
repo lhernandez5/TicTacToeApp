@@ -26,6 +26,14 @@
     text-align: center;
 }
 
+.tie{
+    color:#4400cc;
+    font-family: 'Lucida Grande';
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
 .moves {
     color:#4400cc;
     font-size: 20px;
@@ -39,4 +47,15 @@
     border: 2px solid #4400cc;
     background-color: #d9b3ff;
     margin: 2px;
+}
+
+.newGameButton {
+    color:blueviolet;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid #4400cc;
+    background-color: #d9b3ff;
+    margin: 2px;
+    visibility: visible;
 }
