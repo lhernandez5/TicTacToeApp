@@ -30,26 +30,26 @@ const Game = () => {
     const renderMoves = () => (
         history.map((_step, move) => {
             const movesDisplay = `Go back to move #${move}`;
-            const newStart = 0;
             return (
                 <div key={move} className="moves">
-                    {((move===0 && !winner) || (move===0 && winner)) && (<button className="newGameButton" onClick={() => jumpTo(newStart)}>{'New Game'}</button>)}
-                    {move!=0 ? (<button className="movesButton" onClick={() => jumpTo(move)}>{movesDisplay}</button> ): ''}
+                    {move!==0 ? (<button className="movesButton" onClick={() => jumpTo(move)}>{movesDisplay}</button> ): ``}
                 </div>
             )
         })
     );
 
-    console.log("stepnumnber "+stepNumber);
     return (
         <>
             <h2 className="title">Tic Tac Toe</h2>
+            <p className="intro">This is a game of Tic Tac Toe. You may start by choosing a tile for 'X'. When you make the first 
+            move you'll see that you're able to go back and change a move or if you change your mind just keep your original move.</p>
             <Board squares={history[stepNumber]} onClick={handleClick} />
             <div className="game">
-                <p className="winner">{winner ? `The Winner is: ` + winner + `! 🏅` : null}</p>
+                <p className="winner">{winner ? `The Winner is: ` + winner + `!!! 🏅` : null}</p>
                 <p className="tie">{(!winner && stepNumber===9) ? `It's a Tie! 👔`: null}</p>
-                <p className="result">{'Current Player: ' + (xIsNext ? 'X' : 'O')}</p>
-                {renderMoves()}
+                <p className="result">{!winner ? `Current Player: ` + (xIsNext ? `X` : `O`) : null}</p>
+                {((stepNumber===0 && !winner) || (stepNumber===0 && winner)) ? null : (<button className="newGameButton" onClick={() => jumpTo(0)}>{`New Game`}</button>)}
+                {stepNumber===0 ? `` : renderMoves()}
             </div>
         </>
     )

@@ -6,7 +6,7 @@
 .title {
     text-align: center;
     font-family: 'Verdana';
-    color: rgb(179, 6, 223);
+    color: rgb(133, 47, 208);
     font-size: 40px;
 }
 
@@ -26,7 +26,7 @@
     text-align: center;
 }
 
-.tie{
+.tie {
     color:#4400cc;
     font-family: 'Lucida Grande';
     font-size: 20px;
@@ -47,6 +47,7 @@
     border: 2px solid #4400cc;
     background-color: #d9b3ff;
     margin: 2px;
+    visibility: true;
 }
 
 .newGameButton {
@@ -54,8 +55,15 @@
     font-size: 18px;
     font-weight: bold;
     border-radius: 10px;
-    border: 2px solid #4400cc;
-    background-color: #d9b3ff;
-    margin: 2px;
-    visibility: visible;
+    border: 3px solid #6c39d1;
+    background-color: #ebe3f2;
+    margin-left: 20%;
+}
+
+.intro {
+    color:rgb(78, 2, 145);
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Lucida Grande';
+    margin: auto 20px;
 }
