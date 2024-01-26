@@ -32,7 +32,7 @@ const Game = () => {
             const movesDisplay = `Go back to move #${move}`;
             return (
                 <div key={move} className="moves">
-                    {move!==0 ? (<button className="movesButton" onClick={() => jumpTo(move)}>{movesDisplay}</button> ): ``}
+                    {move!==0 ? (<button className="moves-button" onClick={() => jumpTo(move)}>{movesDisplay}</button> ): ``}
                 </div>
             )
         })
@@ -47,8 +47,8 @@ const Game = () => {
             <div className="game">
                 <p className="winner">{winner ? `The Winner is: ` + winner + `!!! 🏅` : null}</p>
                 <p className="tie">{(!winner && stepNumber===9) ? `It's a Tie! 👔`: null}</p>
-                <p className="whosTurn">{(!winner && stepNumber!==9) ? `Current Player: ` + (xIsNext ? `X` : `O`) : null}</p>
-                {((stepNumber===0 && !winner) || (stepNumber===0 && winner)) ? null : (<button className="newGameButton" onClick={() => jumpTo(0)}>{`New Game`}</button>)}
+                <p className="whos-turn">{(!winner && stepNumber!==9) ? `Current Player: ` + (xIsNext ? `X` : `O`) : null}</p>
+                {((stepNumber===0 && !winner) || (stepNumber===0 && winner)) ? null : (<button className="new-game-button" onClick={() => jumpTo(0)}>{`New Game`}</button>)}
                 {stepNumber===0 ? `` : renderMoves()}
             </div>
         </>

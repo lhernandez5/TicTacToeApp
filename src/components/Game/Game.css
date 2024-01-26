@@ -10,7 +10,7 @@
     font-size: 40px;
 }
 
-.whosTurn {
+.whos-turn {
     color:#4400cc;
     font-family: 'Lucida Grande';
     font-size: 20px;
@@ -39,7 +39,7 @@
     font-size: 20px;
 }
 
-.movesButton {
+.moves-button {
     color:blueviolet;
     font-size: 18px;
     font-weight: bold;
@@ -50,7 +50,7 @@
     visibility: true;
 }
 
-.newGameButton {
+.new-game-button {
     color:blueviolet;
     font-size: 18px;
     font-weight: bold;
