@@ -1,14 +1,13 @@
 import React from "react";
 import Square from "../Square/Square";
-import "./Board.css"
+import "./Board.css";
 
 const Board = ({ squares, onClick }) => (
-    <div className="board">
-        {squares.map((square, i) => (
-            <Square key={i} value={square} onClick={() => onClick(i)} />
+  <div className="board">
+    {squares.map((square, i) => (
+      <Square key={i} value={square} onClick={() => onClick(i)} />
     ))}
-    </div>
-
+  </div>
 );
 
 export default Board;

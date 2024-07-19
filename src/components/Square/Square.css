@@ -1,9 +1,9 @@
 .square {
-    background: #d9b3ff;
-    border: 2px solid #4400cc;
-    font-size: 30px;
-    font-weight: 800;
-    cursor: 'pointer';
-    outline: none;
-    color:blueviolet
+  background: #d9b3ff;
+  border: 2px solid #4400cc;
+  font-size: 30px;
+  font-weight: 800;
+  cursor: "pointer";
+  outline: none;
+  color: blueviolet;
 }
