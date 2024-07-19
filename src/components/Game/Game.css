@@ -34,12 +34,7 @@
   text-align: center;
 }
 
-.moves {
-  color: #4400cc;
-  font-size: 20px;
-}
-
-.moves-button {
+.change-moves-button {
   color: blueviolet;
   font-size: 18px;
   font-weight: bold;
