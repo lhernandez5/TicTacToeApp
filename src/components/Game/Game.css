@@ -34,6 +34,11 @@
   text-align: center;
 }
 
+.change-moves {
+  color: #4400cc;
+  font-size: 20px;
+}
+
 .change-moves-button {
   color: blueviolet;
   font-size: 18px;

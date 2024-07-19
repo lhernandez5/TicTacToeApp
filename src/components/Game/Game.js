@@ -9,10 +9,14 @@ const Game = () => {
   const [xIsNext, setXisNext] = useState(true);
   const winner = calculateWinner(history[stepNumber]);
 
-  const handleClick = () => {
+  const handleClick = (i) => {
     const timeInHistory = history.slice(0, stepNumber + 1);
     const current = timeInHistory[stepNumber];
     const squares = [...current];
+    //if user clicks an occupied space or if the game is won, return
+    if (winner || squares[i]) return;
+    //put an X or an O in the clicked square
+    squares[i] = xIsNext ? "X" : "O";
     setHistory([...timeInHistory, squares]);
     setStepNumber(timeInHistory.length);
     setXisNext(!xIsNext);
@@ -27,15 +31,15 @@ const Game = () => {
     history.map((_step, move) => {
       const moveChangeDisplay = `Go back to move #${move}`;
       return (
-        <>
+        <div key={move} className="change-moves">
           {move !== 0 ? (
-            <button className="change-moves-button" onClick={jumpTo(move)}>
+            <button className="change-moves-button" onClick={() => jumpTo(move)}>
               {moveChangeDisplay}
             </button>
           ) : (
             ``
           )}
-        </>
+        </div>
       );
     });
 
